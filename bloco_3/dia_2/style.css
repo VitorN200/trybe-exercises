@@ -1,0 +1,27 @@
+h1 {
+    font-size: 65px; 
+    color: orange;
+    font-family: sans-serif;
+  }
+  ul {
+    background-color: #f1f1f1;
+    font-style: italic;
+    line-height: 60px;
+  }
+  .cor {
+    background-color: #c28b8b;
+  }
+  p{
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: underline;
+    padding: 10px;
+  }
+  body{
+    font-size: 16px;
+  }
+  #amr{background-color: yellow;}
+  #rd{background-color: red;}
+  #brw{background-color: brown;}
+
+  li{padding: 0 10px}
