@@ -46,12 +46,52 @@
 
 // -------------------------------
 
-let num = 0;
+// let num = 0;
 
-if( num > 0){
-    console.log("positive")
-}else if(num < 0){
-    console.log("negative")
-}else{
-    console.log("zero")
+// if( num > 0){
+//     console.log("positive")
+// }else if(num < 0){
+//     console.log("negative")
+// }else{
+//     console.log("zero")
+// }
+
+// -------------------------------
+
+// let tri1 = 30;
+// let tri2 = 60;
+// let tri3 = 90;
+
+// if (tri1 + tri2 + tri3 == 180){
+//     console.log("true")
+// }else{
+//     console.log("false")
+// }
+
+// ---------------------------------------------
+
+let nome = "peao";
+
+switch(nome){
+
+    case "peao":
+        console.log("uma casa para frente");
+        break;
+    case "torre":
+        console.log("anda em vertical e horizontal");
+        break;
+    case "cavalo":
+        console.log("anda em L");
+        break;
+    case "bispo":
+        console.log("anda em diagonal");
+        break;
+    case "rainha":
+        console.log("anda em todas as direcoes");
+        break;
+    case "rei":
+        console.log("uma casa em verticval e horizontal");
+        break;
+    default:
+        console.log("error");
 }
