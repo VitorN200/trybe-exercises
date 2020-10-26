@@ -97,7 +97,7 @@ for( let index = 1; index <= 25; index++){
 
 console.log(array);
 
-// Ex 9 */
+// Ex 9 
 
 let array = [];
 for( let index = 1; index <= 25; index++){
@@ -109,3 +109,30 @@ for(let index2 = 0; index2 < array.length; index2 ++){
 
     console.log(array[index2] / 2)
 }
+
+for (let i = 1; i < numbers.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (numbers[i] < numbers[j]) { // if (numbers[i] > numbers[j]) {  Ex. 2
+        let position = numbers[i];
+  
+        numbers[i] = numbers[j];
+        numbers[j] = position;
+      }
+    }
+  }
+
+  console.log(numbers);
+  */
+
+  array = [];
+
+  for(let index =0; index < numbers.length; index++){
+
+    if(numbers[index + 1] == null){
+        array.push(numbers[index] * 2)
+    }else{
+        array.push(numbers[index] * numbers[index +1])
+    }
+  }
+
+  console.log(array);
