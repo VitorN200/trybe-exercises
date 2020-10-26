@@ -27,7 +27,7 @@ for( let index = 0; index < numbers.length; index++){
 
 console.log(soma / numbers.length);
 
-// Ex 4 */
+// Ex 4 
 
 let soma = 0;
 for( let index = 0; index < numbers.length; index++){
@@ -42,3 +42,34 @@ if(media > 20){
 }else{
     console.log("Valor menor que 20");
 }
+
+// Ex 5 
+
+let maior = 0;
+
+for( let index = 0; index < numbers.length; index++){
+
+     if(numbers[index] > maior){
+         maior = numbers[index];
+     }
+}
+
+console.log(maior);
+
+// Ex 6*/
+let impar = [];
+for( let index = 0; index < numbers.length; index++){
+
+    if(numbers[index] % 2 != 0){
+        impar.push(numbers[index]);
+    }
+}
+
+if(impar == null){
+    console.log("Nenhum valor impar encontrado");
+}else{
+    console.log(impar);
+}
+
+
+
