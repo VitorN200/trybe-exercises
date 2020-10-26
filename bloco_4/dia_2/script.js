@@ -56,7 +56,7 @@ for( let index = 0; index < numbers.length; index++){
 
 console.log(maior);
 
-// Ex 6*/
+// Ex 6
 let impar = [];
 for( let index = 0; index < numbers.length; index++){
 
@@ -71,5 +71,41 @@ if(impar == null){
     console.log(impar);
 }
 
+// Ex 7 
 
 
+let menor;
+
+for( let index = 0; index < numbers.length; index++){
+
+    if(menor == null){
+        menor = numbers[index]
+    } else if(numbers[index] < menor){
+         menor = numbers[index];
+     }
+}
+
+console.log(menor);
+
+// Ex 8 
+
+let array = [];
+for( let index = 1; index <= 25; index++){
+
+    array.push(index);
+}
+
+console.log(array);
+
+// Ex 9 */
+
+let array = [];
+for( let index = 1; index <= 25; index++){
+
+    array.push(index);
+}
+
+for(let index2 = 0; index2 < array.length; index2 ++){
+
+    console.log(array[index2] / 2)
+}
