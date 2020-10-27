@@ -1,4 +1,4 @@
-let n = 27;
+let n =11;
 let star = "*";
 let linha = "";
 let space = " ";
@@ -62,43 +62,60 @@ let space = " ";
 //     }  
 // }
 
-if( n % 2 == 0){
-    console.log("Erro: numero par inserido");
+// 5 ----------------------------------------------------------------------
+// if( n % 2 == 0){
+//     console.log("Erro: numero par inserido");
+// }else{
+
+//     let div = n /2 ;
+//     let arrendondadoBaixo = Math.floor(div);
+//     let arrendondadoCima = Math.ceil(div);
+
+//     for(let index = 1; index <= arrendondadoCima; index ++){
+//         linha ="";
+//         for(let i = 0; i < arrendondadoBaixo; i++){
+
+//             linha = linha + space;
+//         }
+        
+//         linha = linha + star;
+        
+//         if(index > 2 && index < arrendondadoCima){
+//             for(let z = 1; z < index; z++){
+//                 if(z ==1){
+//                     linha = linha + space;
+//                 }else{
+//                     linha = linha + space + space;
+//                 }       
+//             }
+//             linha = linha + star;
+//         }else if(index == 2){
+//             linha = linha + space;
+//             linha = linha + star;
+//         }else if(index == arrendondadoCima){
+//             for(let y = 1; y < n; y++){
+//                 linha = linha + star;
+//             }
+//         }
+
+//         arrendondadoBaixo--;
+//         console.log(linha);
+//     }  
+// }
+
+let primo = true;
+
+for(let i = 1; i <= n; i++){
+    if(n % i == 0){
+        if(i != 1 && i != n){
+            primo = false;
+            break;
+        }
+    }
+}
+if(primo == true){
+    console.log(`O numero ${n} e primo`)
 }else{
-
-    let div = n /2 ;
-    let arrendondadoBaixo = Math.floor(div);
-    let arrendondadoCima = Math.ceil(div);
-
-    for(let index = 1; index <= arrendondadoCima; index ++){
-        linha ="";
-        for(let i = 0; i < arrendondadoBaixo; i++){
-
-            linha = linha + space;
-        }
-        
-        linha = linha + star;
-        
-        if(index > 2 && index < arrendondadoCima){
-            for(let z = 1; z < index; z++){
-                if(z ==1){
-                    linha = linha + space;
-                }else{
-                    linha = linha + space + space;
-                }       
-            }
-            linha = linha + star;
-        }else if(index == 2){
-            linha = linha + space;
-            linha = linha + star;
-        }else if(index == arrendondadoCima){
-            for(let y = 1; y < n; y++){
-                linha = linha + star;
-            }
-        }
-
-        arrendondadoBaixo--;
-        console.log(linha);
-    }  
+    console.log(`O numero ${n} nao e primo`)
 }
 
