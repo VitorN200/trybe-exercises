@@ -12,9 +12,22 @@
 
 // testingScope(true);
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-// Seu código aqui.
-oddsAndEvens.sort((a, b) => a - b);
+// // Seu código aqui.
+// oddsAndEvens.sort((a, b) => a - b);
 
-console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+// console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+
+const fatorial = (n) => {
+  if (n == 0) {
+    return 1;
+  }
+  var resp = n;
+  while (n > 2) {
+    resp *= --n;
+  }
+  return resp;
+}
+
+console.log(fatorial(5));
